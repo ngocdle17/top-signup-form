@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.box-wrapper {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-container {
+    background-image: url(/the-fly.JPG);
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    width: 40vw;
+}
+
+.right-section {
+    display: flex;
+    width: 60vw;
+    flex-flow: column nowrap;
+    justify-content: center;
+}
+
+.box-2 {
+    width: 90%;
+    background: orange;
+}
+
+.spaced-text {
+    margin: 40px 20px;
+}
+
+.box-3 {
+    background: lightgreen;
+}
+
+.signup-form {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+legend {
+    width: 100%;
+}
+.box-4 {
+    background: lightblue;
+}
+
+
+
+/*
+.box-2,
+.box-3,
+.box-4 {
+    flex: 0 0 33.333333%;
+    width: 50%;
+}
+/*
+.bg-image {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.bg-body {
+    position: absolute;
+    width: 100%;
+    background: black;
+    opacity: 0.6;
+    color: white;
+    top: 8rem;
+    text-align: center;
+    font-size: 1.2em;
+}
