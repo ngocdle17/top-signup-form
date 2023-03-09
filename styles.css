@@ -1,82 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&family=Righteous&display=swap');
+
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    color: #444;
+    font-family: 'Overpass', sans-serif;
 }
 
-.box-wrapper {
+.main {
     display: flex;
     flex-flow: row wrap;
     width: 100vw;
     height: 100vh;
 }
-
+/****************/
+/* LEFT SECTION */
+/****************/
 .bg-container {
     background-image: url(/the-fly.JPG);
-    background-position: center;
-    background-size: auto;
+    background-position: 80%;
+    background-size: cover;
     background-repeat: no-repeat;
     width: 40vw;
 }
 
+.logo {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    height: auto;
+    top: 20vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    gap: 1vw;
+    padding: 15px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin {
+    height: 8vh;
+    filter: invert(100%);
+}
+
+.bg-paragraph {
+    color: white;
+    font-weight: 700;
+    font-size: 3em;
+    text-transform: uppercase;
+}
+
+.credit {
+    display: flex;
+    top: 88vh;
+    flex-flow: row wrap;
+    position: relative;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.credit a {
+    font-size: 1.1em;
+    color: white;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+/*****************/
+/* RIGHT SECTION */
+/*****************/
+
 .right-section {
+    background: #eefafa;
     display: flex;
     width: 60vw;
     flex-flow: column nowrap;
     justify-content: center;
 }
 
-.box-2 {
-    width: 90%;
-    background: orange;
+.box-1 {
+    width: 70%;
+    padding-left: 3vw;
 }
 
 .spaced-text {
-    margin: 40px 20px;
+    margin: 40px 0;
 }
 
-.box-3 {
-    background: lightgreen;
+.box-2 {
+    background: #f9f9f9;
 }
 
-.signup-form {
+.input {
+    display: flex;
+    flex-flow: column wrap;
+    width: 40%;
+    text-transform: uppercase;
+}
+
+.form-body {
     display: flex;
     flex-flow: row wrap;
-    gap: 20px;
+    gap: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
+    padding-left: 3vw;
 }
 
 legend {
     width: 100%;
-}
-.box-4 {
-    background: lightblue;
-}
-
-
-
-/*
-.box-2,
-.box-3,
-.box-4 {
-    flex: 0 0 33.333333%;
-    width: 50%;
-}
-/*
-.bg-image {
-    position: absolute;
-    width: 100%;
-    z-index: -1;
-}
-
-.bg-body {
-    position: absolute;
-    width: 100%;
-    background: black;
-    opacity: 0.6;
-    color: white;
-    top: 8rem;
-    text-align: center;
     font-size: 1.2em;
+    font-weight: 700;
+}
+
+input {
+    border: 1px solid #bdc3c7;
+    border-radius: 3px;
+    font-size: 1.1em;
+    padding-left: 5px;
+}
+
+.btn-container {
+    padding-left: 3vw;
+}
+
+.btn-submit {
+  align-items: center;
+  appearance: button;
+  background-color: #33b5ac;
+  border-radius: 6px;
+  border-style: none;
+  box-shadow: rgba(255, 255, 255, 0.26) 0 1px 2px inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  font-family: "RM Neue",sans-serif;
+  font-size: 1.3em;
+  line-height: 1.15;
+  margin: 40px 0;
+  padding: 10px 40px;
+  text-align: center;
+  text-transform: none;
+  transition: color .13s ease-in-out,background .13s ease-in-out,opacity .13s ease-in-out,box-shadow .13s ease-in-out;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.btn-submit:active {
+  background-color: #33b5ac;
+}
+
+.btn-submit:hover {
+  background-color: #3ac7bd;
+}
+
+
+.box-3 {
+    padding-left: 3vw;
+    padding-top: 3vh;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #33b5ac;
+    font-size: 1.2em;
+    font-weight: 700;
 }

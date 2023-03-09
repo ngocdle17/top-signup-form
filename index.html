@@ -8,54 +8,67 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="box-wrapper">
+    <div class="main">
         <div class="bg-container">
-           <!-- <img class="bg-image" src="/the-fly.JPG" alt=""> -->
-                <p class="bg-paragraph">Sign-up Form</p>
-        </div> <!--box 1-->
+            <div class="logo">
+                <img class="odin" src="/odin.png" alt="Odin">
+                <p class="bg-paragraph">Odin</p>
+            </div> 
+            <div class="credit">
+                <a href="https://www.flaticon.com/free-icons/odin" title="odin icons">Odin icons created by Freepik - Flaticon</a>
+            </div>
+            
+        </div>
         <div class="right-section">
 
-            <div class="box-2">
-                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br><br> Sign up <em>now</em> to get started.</h1>
+            <div class="box-1">
+                <h1>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.<br>Sign up <em>now</em> to get started.</h1>
                 <h2 class="spaced-text">You know <em>you</em> want to.</h2>
             </div>
 
-            <div class="box-3">
-                <form class="signup-form" action="example.com/path" method="post">
+            <div class="box-2">
+                <form action="example.com/path" method="post">
+
+                    <div class="form-body">
                     <legend>Let's do this!</legend>
-                    <div class="input">
-                        <label for="first_name">First Name</label>
-                        <input type="text" id="first_name">
+
+                        <div class="input">
+                            <label for="first_name">First Name</label>
+                            <input type="text" id="first_name">
+                        </div>
+                        <div class="input">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" id="last_name">
+                        </div>
+                        <div class="input">
+                            <label for="user_email">Email</label>
+                            <input type="email" id="user_email" placeholder="you@email.com">
+                        </div>
+                        <div class="input">
+                            <label for="phone_number">Phone Number</label>
+                            <input type="text" id="phone_number">
+                        </div>
+                        <div class="input">
+                            <label for="user_password">Password</label>
+                            <input type="password" id="user_password">
+                        </div>
+                        <div class="input">
+                            <label for="password_confirm">Confirm Password</label>
+                            <input type="password" id="password_confirm">
+                        </div>
+                        </div>
+                            
+                    <div class="btn-container">
+                        <button class="btn-submit" type="submit">Create Account</button>
                     </div>
-                    <div class="input">
-                        <label for="last_name">Last Name</label>
-                        <input type="text" id="last_name">
-                    </div>
-                    <div class="input">
-                        <label for="user_email">Email</label>
-                        <input type="email" id="user_email" placeholder="you@email.com">
-                    </div>
-                    <div class="input">
-                        <label for="phone_number">Phone Number</label>
-                        <input type="text" id="phone_number">
-                    </div>
-                    <div class="input">
-                        <label for="user_password">Password</label>
-                        <input type="password" id="user_password">
-                    </div>
-                    <div class="input">
-                        <label for="password_confirm">Confirm Password</label>
-                        <input type="password" id="password_confirm">
-                    </div>
-                        
-                        
-                    <button type="submit">Create Account</button>
+                    
                 </form>
             </div>
 
-            <div class="box-4">
+            <div class="box-3">
                 
                 <h3>Already have an account?</h2>
+                    <a href="#">Log in</a>
             </div>
 
         </div> <!-- RIGHT SECTION-->
